@@ -1,6 +1,7 @@
 name: Test kube-linter
 
 on:
+  workflow_dispatch:
   pull_request:
   # Workflows triggered by Dependabot on the "push" event run with read-only access.
   # Uploading Code Scanning results requires write access. Ignore dependabot branches for auto-merge.
