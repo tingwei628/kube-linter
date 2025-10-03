@@ -12,10 +12,13 @@ spec:
       image: busybox:stable
       resources:
         limits:
-          memory: "128Mi"
+          # memory: "128Mi"
+          memory: "256Mi"
           cpu: "500m"
         requests:
-          memory: "64Mi"
-          cpu: "250m"
+          # memory: "64Mi"
+          # cpu: "250m"
+          memory: "128Mi"
+          cpu: "500m"
       securityContext:
         readOnlyRootFilesystem: true
